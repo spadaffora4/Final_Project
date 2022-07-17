@@ -107,3 +107,9 @@ input {
 .badge-completed {
     background-color: #b6d7a8;
 }
+
+footer {
+    font-family: 'Oswald', sans-serif; 
+    font-weight: 200;
+    text-align: center;
+}
