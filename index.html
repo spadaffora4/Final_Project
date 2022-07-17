@@ -34,18 +34,72 @@
             </div> <!--first row closing div-->
     
         <br>
-        <div class="row status text-info">
+        <div class="row status">
             <!--Status headings-->
             <div class="col-3">
-                <h2 class="not-started border border-info">Not Started</h2>
+                <h2 class="not-started border border-info text-info">Not Started</h2>
+                    <div class="card" id="tasks-not-started">
+                        <div class="card-body">
+                        <h5 class="card-title">Review pull requests</h5>
+                        <p class="card-text">Group meeting on Jul 17 at 4:00pm EST to approve and merge code</p>
+                        <p>ASSIGNED TO: All <br> DUE DATE: Jul 17, 2022</p>
+                        <span class="badge badge-danger">Not Started</span>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Task 4: Task Form Inputs Validation</li>
+                        <li class="list-group-item">Task 5: Adding Tasks</li>
+                        <li class="list-group-item">Task 6: Display The Tasks</li>
+                        <li class="list-group-item">Task 7: Update A Task</li>
+                        <li class="list-group-item">Task 8: Persisting Tasks to LocalStorage</li>
+                        <li class="list-group-item">Task 9: Deleting Tasks</li>
+                        </ul>
+                    </div>
+            </div>
+            
+            <div class="col-3">
+                <h2 class="in-progress border border-info text-info">In Progress</h2>
+                <div class="card" id="tasks-in-progress">
+                    <div class="card-body">
+                    <h5 class="card-title">Write HTML</h5>
+                    <p class="card-text">Implement the basic HTML structure of your Wireframes design</p>
+                    <p>ASSIGNED TO: David <br> DUE DATE: Jul 14, 2022</p>
+                    <span class="badge badge-in-progress">In Progress</span>
+                    </div>
+                </div>
+                <br>
+                <div class="card" id="tasks-in-progress">
+                    <div class="card-body">
+                    <h5 class="card-title">Write CSS & Bootstrap</h5>
+                    <p class="card-text">Implement the card layout bootstrap component that contains the task information</p>
+                    <p>ASSIGNED TO: Shailean <br> DUE DATE: Jul 17, 2022</p>
+                    <span class="badge badge-in-progress">In Progress</span>
+                    </div>
+                </div>
             </div>
 
             <div class="col-3">
-                <h2 class="in-progress border border-info">In Progress</h2>
-            </div>
-
-            <div class="col-3">
-                <h2 class="completed border border-info">Completed</h2>
+                <h2 class="completed border border-info text-info">Completed</h2>
+                <div class="card" id="tasks-completed">
+                    <div class="card-body">
+                    <h5 class="card-title">Create Repository</h5>
+                    <p class="card-text"> Create project repo for Group 8</p>
+                    <p>ASSIGNED TO: Angelica <br> DUE DATE: Jul 14, 2022</p>
+                    <span class="badge badge-completed">Completed</span>
+                    <span class="check">&#10003;</span>
+                    <div class="circle"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="card" id="tasks-completed">
+                    <div class="card-body">
+                    <h5 class="card-title">Create Wireframe</h5>
+                    <p class="card-text">Create the Task planner app wireframes to understand how it will work and look</p>
+                    <p>ASSIGNED TO: Shailean <br> DUE DATE: Jul 14, 2022</p>
+                    <span class="badge badge-completed">Completed</span>
+                    <span class="check">&#10003;</span>
+                    <div class="circle"></div>
+                    </div>
+                </div>
             </div>
 
             <!--New Task form-->
@@ -62,7 +116,7 @@
 
                     <label for="assigned">Assigned To:</label><br>
                     <select type="text" name="assigned" id="assigned">
-                        <option value="assign"></option>
+                        <option value="all">All</option>
                         <option value="angelica">Angelica</option>
                         <option value="david">David</option>
                         <option value="shailean">Shailean</option>
@@ -77,6 +131,10 @@
             </div> 
         </div> <!--second row closing div-->
     </div> <!--container-fluid closing div-->
+    <br>
+    <footer>
+        <p>Group 8</p>
+    </footer>
 </body>
 
 </html>
