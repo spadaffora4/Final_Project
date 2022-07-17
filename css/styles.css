@@ -8,7 +8,7 @@ h1 {
     text-align: center;
     padding: 10px;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .status {
@@ -20,19 +20,19 @@ h1 {
 .not-started {
     background-color: #f4ccccff;
     border-radius: 5px;
-    padding: 5px;
+    padding-bottom: 7px;
 }
 
 .in-progress {
     background-color: #fff2ccff;
     border-radius: 5px;
-    padding: 5px;
+    padding-bottom: 7px;
 }
 
 .completed {
     background-color: #d9ead3ff;
     border-radius: 5px;
-    padding: 5px;
+    padding-bottom: 7px;
 }
 
 .form {
@@ -42,16 +42,68 @@ h1 {
     font-size: large;
 }
 
+input {
+    width: 100%;
+    background-color: #eeeeeeff;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thin;
+}
+
 #due {
     color: grey;
 }
 
 #assigned {
     color: grey;
+    width: 100%;
+    background-color: #eeeeeeff;
+    border-radius: 5px;
 }
 
 .btn {
     background-color: #0097a7ff;
     color: white;
     font-size: larger;
+}
+
+#tasks-not-started {
+    text-align: left;
+    border-color: #e06666;
+}
+
+#tasks-in-progress {
+    text-align: left;
+    border-color: #f1c232;
+}
+
+#tasks-completed {
+    text-align: left;
+    border-color: #93c47d;
+}
+
+.card-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.list-group-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.badge-in-progress {
+    background-color: #ffd966;
+}
+
+.badge-completed {
+    background-color: #b6d7a8;
 }
