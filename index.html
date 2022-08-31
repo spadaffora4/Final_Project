@@ -9,9 +9,9 @@
 
     <!--Bootstrap stylesheet-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    
+
     <!--CSS stylesheet-->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="style.css">
 
     <!--Oswald fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,18 +104,19 @@
 
             <!--New Task form-->
             <div class="col-3 form">
-                <form action="">
+                <form action="" onsubmit="return validFormFieldInput()">
                     <label for="task">Task Name:</label><br>
-                    <input type="text" name="task" id="task"><br><br>
+                    <input type="text" name="task" id="newTaskNameInput"><br><br>
             
                     <label for="description">Description:</label><br>
-                    <input type="text" name="description" id="description"><br><br>
+                    <input type="text" name="description" id="newTaskDescriptionInput"><br><br>
             
                     <label for="due">Due Date:</label><br>
-                    <input type="date" name="due" id="due"><br><br>
+                    <input type="date" name="due" id="newTaskDueDateInput"><br><br>
 
                     <label for="assigned">Assigned To:</label><br>
-                    <select type="text" name="assigned" id="assigned">
+                    <select type="text" name="assigned" id="newTaskAssignedToInput">
+                        <option value=""></option>
                         <option value="all">All</option>
                         <option value="angelica">Angelica</option>
                         <option value="david">David</option>
@@ -135,6 +136,8 @@
     <footer>
         <p>Group 8</p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
