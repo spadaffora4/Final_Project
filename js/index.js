@@ -1,5 +1,7 @@
+const task1 = new TaskManager('task');
+console.log(task1.tasks);
 // Validate form input
-function validFormFieldInput() {
+function validFormFieldInput(data) {
     // Validate task name input
     const newTaskNameInput = document.querySelector('#newTaskNameInput');
     const name = newTaskNameInput.value;
@@ -9,6 +11,7 @@ function validFormFieldInput() {
     } else {
         console.log("Name:  " + name);
     }
+
     // Validate task description input
     const newTaskDescriptionInput = document.querySelector('#newTaskDescriptionInput');
     const description = newTaskDescriptionInput.value;
@@ -36,4 +39,13 @@ function validFormFieldInput() {
     } else {
         console.log("Assigned to:  " + assignedTo);
     }
+    //I'm pretty sure this Taskform I added is wrong-TO
+    let newTaskForm = document.querySelector("#newTaskForm");
+    newTaskForm.addEventListener('submit', (event) => {
+    // preventDefault action
+    event.preventDefault();})
+
 };
+
+
+
