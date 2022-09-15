@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task List</title>
 
-    
 
     <!--Bootstrap stylesheet-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -47,14 +46,14 @@
                         <p>ASSIGNED TO: All <br> DUE DATE: Jul 17, 2022</p>
                         <span class="badge badge-danger">Not Started</span>
                         </div>
-                        <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Task 4: Task Form Inputs Validation</li>
-                        <li class="list-group-item">Task 5: Adding Tasks</li>
-                        <li class="list-group-item">Task 6: Display The Tasks</li>
-                        <li class="list-group-item">Task 7: Update A Task</li>
-                        <li class="list-group-item">Task 8: Persisting Tasks to LocalStorage</li>
-                        <li class="list-group-item">Task 9: Deleting Tasks</li>
-                        </ul>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Task 4: Task Form Inputs Validation</li>
+                                <li class="list-group-item">Task 5: Adding Tasks</li>
+                                <li class="list-group-item">Task 6: Display The Tasks</li>
+                                <li class="list-group-item">Task 7: Update A Task</li>
+                                <li class="list-group-item">Task 8: Persisting Tasks to LocalStorage</li>
+                                <li class="list-group-item">Task 9: Deleting Tasks</li>
+                            </ul>
                     </div>
             </div>
             
@@ -106,12 +105,20 @@
 
             <!--New Task form-->
             <div class="col-3 form">
-                <form action="" onsubmit="return validFormFieldInput()">
-                    <label for="task">Task Name:</label><br>
-                    <input type="text" name="task" id="newTaskNameInput"><br><br>
+                <form id="newTaskForm" action="" onsubmit="return validFormFieldInput()">
+                  
+                    <label for="task-name">Task Name:</label><br>
+                    <input type="text" name="task-name" id="newTaskNameInput"><br><br>
             
                     <label for="description">Description:</label><br>
                     <input type="text" name="description" id="newTaskDescriptionInput"><br><br>
+
+                    <label for="status">Status:</label><br>
+                    <select type="text" name="status" id="status">
+                        <option value="not-started">Not Started</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="completed">Completed</option>
+                    </select><br><br>
             
                     <label for="due">Due Date:</label><br>
                     <input type="date" name="due" id="newTaskDueDateInput"><br><br>
